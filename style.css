@@ -1,3 +1,8 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
 #main {
     background-image: url(img/header.png);
     background-repeat: no-repeat;
@@ -5,6 +10,35 @@
     background-position: top;
 }
 
+
 #basics {
     line-height: 2;
+}
+
+.welcome-video iframe{
+    height: 400px;
+    width:700px;
+}
+
+.legend-red {
+    padding-left: 15px;
+    margin-right: 10px;
+    background-color: rgb(249, 48, 69);
+}
+
+.legend-green {
+    padding-left: 15px;
+    margin-right: 10px;
+    background-color: rgb(89, 215, 110);
+}
+
+@media (max-width: 400px) {
+    #main {
+        background-image: none;
+    }
+
+    .welcome-video iframe{
+        height: 200px;
+        width:300px;
+    }
 }
