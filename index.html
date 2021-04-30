@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Carbonsäuren</title>
 </head>
-<body class="bg-dark">
+<body>
 
         <!--MAIN-->
 
         <div id="main" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-center text-light">
-                <h1>Carbonsäuren</h1>
-                <h2>In der Technik und im Haushalt</h2>
-                <a href="#start" class="btn btn-outline-warning mt-4 py-3 px-5">Start</a>
+                <h1 class="title">Carbonsäuren</h1>
+                <h2 class="subtitle">In der Technik und im Haushalt</h2>
+                <a href="#start" id="startBtn" class="btn btn-outline-warning mt-4 py-3 px-5">Start</a>
             </div>
         </div>
 
@@ -26,23 +26,24 @@
         <div id="start" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-center text-light">
                 <div class="welcome-video">
-                    <iframe src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
+                    <iframe id="welcome-vid" src="https://www.youtube.com/embed/A3PDXmYoF5U" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a href="#basics" class="btn btn-outline-success mx-3 mt-4 px-5 py-3">Weiter <strong></br> [Für Anfänger]</strong></a>
-                <a href="" class="btn btn-outline-info mt-4 mx-3 px-5 py-3">Weiter <strong></br> [Für Profis] </strong></a>
+                <a href="" class="btn btn-outline-warning mt-4 mx-3 px-5 py-3">Weiter <strong></br> [Für Profis] </strong></a>
+                <a href="#basics" id="start-Button" class="btn btn-warning mx-3 mt-4 px-5 py-3 ">Weiter <strong></br> [Für Anfänger]</strong></a>
             </div>
         </div>
 
 
-        <!--BAICS-->
+        <!--BASICS-->
 
         <div id="basics" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-light">
-                <h2>Was ist eine Carbonsäure - Die Basics:</h2>
+                <h2>Was ist eine Carbonsäure – Die Basics:</h2>
                 <ul class="mt-4">
                     <li>Eine Carbonsäure ist eine organische Verbindung.</li>
                     <li>Ragiert sauer (d.h. H<sup>+</sup> Protonen können leicht abgegeben werden)</li>
                 </ul>
+                
                 <p><strong>Funktionelle Gruppe:</strong> Carboxy-Gruppe</p>
                 <table style="width:100%">
                     <tr>
@@ -54,6 +55,7 @@
                         </td>
                     </tr>
                 </table>
+                <hr>
                 <p class="mt-4"><strong>Homologe Reihe der Carbonsäure:</strong></p>
                 <div class="text-center">
                     <table style="width:100%">
@@ -82,13 +84,50 @@
                             <td>Pentan<span class="text-info">säure</span></td>
                         </tr>
                       </table>
+                      <a href="#ameisen" class="btn btn-outline-warning mt-5 py-3 px-5">Weiter</a>
                 </div>
             </div>
         </div>
+
+
+        <!--AMEISENSÄURE-->
+
+        <div id="ameisen" class="row vh-100 justify-content-md-center align-items-center">
+            <div class="col-lg-auto text-light">
+                <h2>Die Ameisensäure (Methansäure)</h2>
+                <table class="mt-5" style="width:100%">
+                    <tr>
+                        <td>
+                            <p><strong>Beschreibung:</strong></p>
+                            <p>
+                                Dadurch, dass die Säure von Ameisen als Gift verwendet wird, <br>
+                                wurde sie schon 1670 zur Ameisensäure benannt.
+                            </p>
+
+                            <p><strong>Formel:</strong></p>
+                            <img src="img/Formeln/methan.png" alt="Ameisensäure">
+                        </td>
+                        <td>
+                            <img class="vergleich-img mx-5" src="img/ameisensaeure.jpg" alt="Ameise" onclick="quelle('utopia.de/app/uploads/2019/08/ameisensaeure-cc0-pixabay-ekamelev-190816.jpg')">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
         <footer class="footer fixed-bottom mt-auto py-3 bg-transparen">
             <div class="mx-4">
               <span class="text-muted">Ferdi Duschka und Vincent M.</span>
             </div>
         </footer>
 </body>
+
+<script>
+    function quelle(link) {
+        alert("Quelle: " + link);
+    }
+
+</script>
+
 </html>
