@@ -14,6 +14,7 @@
 
         <div id="main" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-center text-light">
+                <img src="./img/logo_gruenwald.png" height="30" class="mb-3" alt="">
                 <h1 class="title">Carbonsäuren</h1>
                 <h2 class="subtitle">In der Technik und im Haushalt</h2>
                 <a href="#start" id="startBtn" class="btn btn-outline-warning mt-4 py-3 px-5">Start</a>
@@ -28,7 +29,7 @@
                 <div class="welcome-video">
                     <iframe id="welcome-vid" src="https://www.youtube.com/embed/A3PDXmYoF5U" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a href="" class="btn btn-outline-warning mt-4 mx-3 px-5 py-3">Weiter <strong></br> [Für Profis] </strong></a>
+                <a href="#ameisen" class="btn btn-outline-warning mt-4 mx-3 px-5 py-3">Weiter <strong></br> [Für Profis] </strong></a>
                 <a href="#basics" id="start-Button" class="btn btn-warning mx-3 mt-4 px-5 py-3 ">Weiter <strong></br> [Für Anfänger]</strong></a>
             </div>
         </div>
@@ -47,7 +48,7 @@
                 <p><strong>Funktionelle Gruppe:</strong> Carboxy-Gruppe</p>
                 <table style="width:100%">
                     <tr>
-                        <td><img src="img/gruppe.png" height="200"  alt="Carboxyl Gruppe"></td>
+                        <td><img src="./img/gruppe.png" height="200"  alt="Carboxyl Gruppe"></td>
                         <td>
                             <span class="legend-red"></span><span class="text-warning"><strong>Carb</strong></span>onylgruppe
                             <br>
@@ -94,33 +95,40 @@
 
         <div id="ameisen" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-light">
-                <h2>Die Ameisensäure (Methansäure)</h2>
-                <table class="mt-5" style="width:100%">
-                    <tr>
-                        <td>
+                <h2 class="">Die Ameisensäure (Methansäure)</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <div class="row">
                             <p><strong>Beschreibung:</strong></p>
                             <p>
                                 Dadurch, dass die Säure von Ameisen als Gift verwendet wird, <br>
                                 wurde sie schon 1670 zur Ameisensäure benannt.
                             </p>
-
-                            <p><strong>Formel:</strong></p>
-                            <img src="img/Formeln/methan.png" alt="Ameisensäure">
-                        </td>
-                        <td>
-                            <img class="vergleich-img mx-5" src="img/ameisensaeure.jpg" alt="Ameise" onclick="quelle('utopia.de/app/uploads/2019/08/ameisensaeure-cc0-pixabay-ekamelev-190816.jpg')">
-                        </td>
-                    </tr>
-                </table>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <p><strong>Formel:</strong></p>
+                                    <img class="formelImg" src="./img/formeln/methan.png" alt="Ameisensäure"> 
+                                </div>
+                                <div class="col-6">
+                                    <p class="mb-3"><strong>pH-Wert:</strong> 2.38</p>
+                                    <p><strong>Gefahren:</strong></p> 
+                                    <img class="gefahr-symbol" src="./img/symbole/giftig.png" alt="Giftig">
+                                    <img class="gefahr-symbol" src="./img/symbole/aetzend.png" alt="Ätzend">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <div class="ameisen-vid">
+                            <iframe id="ameisen-vid" src="https://www.youtube.com/embed/A3PDXmYoF5U" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                </div>
             </div>
         </div>
-
-
-        <footer class="footer fixed-bottom mt-auto py-3 bg-transparen">
-            <div class="mx-4">
-              <span class="text-muted">Ferdi Duschka und Vincent M.</span>
-            </div>
-        </footer>
 </body>
 
 <script>
@@ -129,5 +137,4 @@
     }
 
 </script>
-
 </html>

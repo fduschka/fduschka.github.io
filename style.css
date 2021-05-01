@@ -63,8 +63,29 @@ body::-webkit-scrollbar {
 .vergleich-img {
     max-width: 400px;
     border-radius: 10px;
+    box-shadow: -5px 10px #2a9188;
+
 }
 
 .formelImg {
-    max-width: 50px;
+    max-width: 150px;
+}
+
+.vergleich-img:hover {
+    box-shadow: -5px 10px #2a3d91;
+}
+
+.gefahr-symbol {
+    height: 50px;
+    margin: 5px;
+}
+
+.verwendung-img {
+    height: 50px;
+    width: 50px
+}
+
+.ameisen-vid iframe{
+    height: 300px;
+    width:600px;
 }
