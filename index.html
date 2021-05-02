@@ -93,11 +93,13 @@
 
         <!--AMEISENSÄURE-->
 
-        <div id="ameisen" class="row vh-100 justify-content-md-center align-items-center">
-            <div class="col-lg-auto text-light">
-                <h2 class="">Die Ameisensäure (Methansäure)</h2>
-                <div class="row">
-                    <div class="col-md-7 col-sm-8">
+        <div id="ameisen" class="row vh-100 justify-content-center align-items-center">
+            <div class="col-auto text-light">
+                
+                <div class="row mx-auto justify-content-center">
+                    
+                    <div class="col-md-6 col-sm-8">
+                        <h2 class="mb-4">Die Ameisensäure (Methansäure)</h2>
                         <div class="row">
                             <p><strong>Beschreibung:</strong></p>
                             <p>
@@ -118,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-8">
+                    <div class="col-md-4 col-sm-8 mt-5">
                         <img class="vergleich-img" src="./img/ameisensaeure.jpg" alt="">
                     </div>
                 </div>
@@ -135,7 +137,7 @@
             <div class="col-lg-auto text-light">
                 <h2 class="text-info">Rate mal!</h2>
                 <h3>Für was wird Ameisensäure eigentlich verwendet?</h3>
-                <p class="mt-3 text-primary">Du kannst <strong>mehrere</strong> Antworten auswählen!</p>
+                <p class="mb-4 text-primary">Du kannst <strong>mehrere</strong> Antworten auswählen!</p>
                 <div class="ameisenquiz">
                     <div class="row mx-5">
                         <label class="quiz-check">Flugzeugenteisung
@@ -157,39 +159,47 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a onclick="ameisenquiz()" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Überprüfen</a>
+                    <a onclick="ameisenquiz(this)" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Überprüfen</a>
+                    <a href="#ameisenfunktionen" id="ameisen-quiz-weiter" class="d-none mx-4 btn btn-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                </div>
+            </div>
+        </div>
+
+        <!--FUNKTIONEN AMEISENSÄURE-->
+
+        <div id="ameisenfunktionen" class="row vh-100 justify-content-md-center align-items-center">
+            <div class="col-auto text-light">
+                    <h2 class="text-success">Auflösung!</h2>
+                    <h3>Für was wird Ameisensäure eigentlich verwendet?</h3>
+                <div class="row mt-5 justify-content-center">
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/ameisegift.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ameisengift</h5>
+                            <p class="card-text">Der Juckreitz wird durch die Ameisensäure ausgelöst.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/planeice.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Flughäfen</h5>
+                            <p class="card-text">Enteisung der Rollbahnen</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/bienenstock.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Flugzeigenteisung</h5>
+                            <p class="card-text">Sard's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
                 </div>
             </div>
         </div>
 </body>
 
-<script>
-    function quelle(link) {
-        alert("Quelle: " + link);
-    }
-
-    function ameisenquiz() {
-        let corrects = [1,0,1,1];
-        let boxes = [document.getElementById("ameisen-quiz-1"), document.getElementById("ameisen-quiz-2"), document.getElementById("ameisen-quiz-3"), document.getElementById("ameisen-quiz-4")]
-        
-        boxes.forEach(box => {
-            box.parentElement.classList.remove("quiz-correct");
-            box.parentElement.classList.remove("quiz-false");
-        });
-
-        for (let i = 0; i < boxes.length; i++) {
-            if (boxes[i].checked && corrects[i] == 1) {
-                boxes[i].parentElement.classList.add("quiz-correct");
-            } else if (!boxes[i].checked && corrects[i] == 1) {
-                boxes[i].parentElement.classList.add("quiz-false");
-            } else if (!boxes[i].checked && corrects[i] == 0) {
-                boxes[i].parentElement.classList.add("quiz-correct");
-            } else {
-                boxes[i].parentElement.classList.add("quiz-false"); 
-            }
-        }
-
-        innerHTML = "Erneut Überprüfen";
-    }
-</script>
+<script src="./script.js"></script>
 </html>

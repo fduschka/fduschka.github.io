@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: rgb(133, 133, 133);
   }
   
   /* On mouse-over, add a grey background color */
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
   
   /* When the checkbox is checked, add a blue background */
   .quiz-check input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #0066ff;
     color:rgb(249, 48, 69);
   }
   
@@ -166,3 +166,14 @@ body::-webkit-scrollbar {
 .quiz-false {
     color: red;
 }
+
+.rounded-img {
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 15px #9898b6);;
+    margin: 20px 5px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
