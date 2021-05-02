@@ -177,3 +177,10 @@ body::-webkit-scrollbar {
     border-radius: 15px;
 }
 
+.sing-badge {
+    background-color: greenyellow;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: black;
+}
+

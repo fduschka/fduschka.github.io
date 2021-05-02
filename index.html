@@ -52,7 +52,7 @@
                         <td>
                             <span class="legend-red"></span><span class="text-warning"><strong>Carb</strong></span>onylgruppe
                             <br>
-                            <span class="legend-green"></span>Hydr<span class="text-warning"><strong>oxy</strong></span>gruppe
+                            <span class="legend-green"></span><span class="text-warning"><strong>Hydroxy</strong></span>gruppe
                         </td>
                     </tr>
                 </table>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-8 mt-5">
-                        <img class="vergleich-img" src="./img/ameisensaeure.jpg" alt="">
+                        <img class="vergleich-img" src="./img/ameisensaeure.jpg" alt="Ameise" onclick="quelle('utopia.de/app/uploads/2019/08/ameisensaeure-cc0-pixabay-ekamelev-190816.jpg')">
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -165,6 +165,7 @@
             </div>
         </div>
 
+
         <!--FUNKTIONEN AMEISENSÄURE-->
 
         <div id="ameisenfunktionen" class="row vh-100 justify-content-md-center align-items-center">
@@ -173,29 +174,62 @@
                     <h3>Für was wird Ameisensäure eigentlich verwendet?</h3>
                 <div class="row mt-5 justify-content-center">
                     <div class="card bg-dark mx-3" style="width: 18rem;">
-                        <img class="rounded-img" src="./img/ameisegift.jpg" alt="Card image cap">
+                        <img class="rounded-img" src="./img/ameisegift.jpg" alt="Ameisengift" onclick="quelle('crazyants.de/wp-content/uploads/2015/01/IMG_2317.jpg')">
                         <div class="card-body">
                             <h5 class="card-title">Ameisengift</h5>
                             <p class="card-text">Der Juckreitz wird durch die Ameisensäure ausgelöst.</p>
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
-                        <img class="rounded-img" src="./img/planeice.jpeg" alt="Card image cap">
+                        <img class="rounded-img" src="./img/planeice.jpeg" alt="Flugzeugenteisung" onclick="quelle('www.aerointernational.de/industrie-technik-nachrichten/flugzeugenteisung-winter-am-flughafen-das-eis-muss-weg.html')">
                         <div class="card-body">
                             <h5 class="card-title">Flughäfen</h5>
-                            <p class="card-text">Enteisung der Rollbahnen</p>
+                            <p class="card-text">Enteisung der Rollbahnen.</p>
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
-                        <img class="rounded-img" src="./img/bienenstock.jpeg" alt="Card image cap">
+                        <img class="rounded-img" src="./img/bienenstock.jpeg" alt="Bienenstock" onclick="quelle('www.nordische-esskultur.de/betriebsbesichtigung-besuch-im-bienenstock/')">
                         <div class="card-body">
-                            <h5 class="card-title">Flugzeigenteisung</h5>
-                            <p class="card-text">Sard's content.</p>
+                            <h5 class="card-title">Milbenbekämfung</h5>
+                            <p class="card-text">Imker verwenden die Säure um Milben von ihren Bienenstöcken vernzuhalten.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                    <a href="#startessig" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--EINFÜHRUNG ESSIGSÄURE-->
+
+        <div id="startessig" class="row vh-100 justify-content-md-center align-items-center">
+            <div class="col-auto text-light">
+                <h2>Lass uns ein <span class="sing-badge">C</span> hinzufügen!</h2>
+                <div class="row">
+                    <div class="col-8 text-center">
+                        <img src="./img/formeln/methan.png" id="image-methan-acid" alt="Methansäure">
+                        <img src="./img/formeln/ethan.png" id="image-ethan-acid" class="d-none" alt="Ethansäure">
+                    </div>
+                    <div class="col-3 mt-5">
+                        <a class="btn btn-outline-danger w-auto mt-5 py-3 px-5" onclick="addCtoMethan(this)">Hinzufügen</a>
+                    </div>
+                </div>
+                <div id="essig-start-quiz" class="d-none">
+                    <h5 class="mt-5">Um was für eine Carbonsäure könnte es sich handeln?</h5>
+                    <div class="row text-center mt-5">
+                        <div class="col-6">
+                            <a onclick="validateEssigQuiz(1, this)" class="btn btn-outline-secondary p-3">Essigsäure</a>
+                        </div>
+                        <div class="col-6">
+                            <a onclick="validateEssigQuiz(0, this)" class="btn btn-outline-info p-3">Milchsäure</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center">
+                    <a id="essig-start-weiter" class="btn d-none btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
                 </div>
             </div>
         </div>

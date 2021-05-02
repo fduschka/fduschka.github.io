@@ -2,6 +2,8 @@ function quelle(link) {
     alert("Quelle: " + link);
 }
 
+
+
 function ameisenquiz(button) {
     let corrects = [1,0,1,1];
     let boxes = [document.getElementById("ameisen-quiz-1"), document.getElementById("ameisen-quiz-2"), document.getElementById("ameisen-quiz-3"), document.getElementById("ameisen-quiz-4")]
@@ -25,4 +27,23 @@ function ameisenquiz(button) {
 
     button.innerHTML = "Erneut Überpüfen";
     document.getElementById("ameisen-quiz-weiter").classList.remove("d-none");
+}
+
+function addCtoMethan(button) {
+    document.getElementById('image-ethan-acid').classList.remove('d-none');
+    document.getElementById('image-methan-acid').classList.add('d-none');
+    button.classList.add('d-none');
+    document.getElementById('essig-start-quiz').classList.remove('d-none');
+}
+
+function validateEssigQuiz(selection, button) {
+    if (selection == 1) {
+        button.classList.add("btn-success");
+        button.classList.remove("btn-outline-secondary");
+    } else {
+        button.classList.add("btn-danger");
+        button.classList.remove("btn-outline-info"); 
+    }
+
+    document.getElementById('essig-start-weiter').classList.remove("d-none");
 }
