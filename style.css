@@ -185,6 +185,7 @@ body::-webkit-scrollbar {
 }
 
 .overlay {
+    display: none;
     height: 100%;
     width: 100%;
     position: fixed; 
@@ -203,4 +204,10 @@ body::-webkit-scrollbar {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
+@media (max-width: 1000px), (max-height: 700px) {
+    .overlay  {
+        display: block;
+    }
+}
