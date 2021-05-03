@@ -10,6 +10,10 @@
 </head>
 <body>
 
+        <div class="overlay">
+            <p>Dein Bildschirm ist zu klein um den vollen Fnktionsumfang zu erhalten. <br> Bitte wechsle auf einen Größerern Monitor!</p>
+        </div>
+
         <!--MAIN-->
 
         <div id="main" class="row vh-100 justify-content-md-center align-items-center">
@@ -172,7 +176,9 @@
             <div class="col-auto text-light">
                     <h2 class="text-success">Auflösung!</h2>
                     <h3>Für was wird Ameisensäure eigentlich verwendet?</h3>
-                <div class="row mt-5 justify-content-center">
+
+                <!--Slide 1-->
+                <div id="ameisen-slide-0" class="row mt-5 justify-content-center">
                     <div class="card bg-dark mx-3" style="width: 18rem;">
                         <img class="rounded-img" src="./img/ameisegift.jpg" alt="Ameisengift" onclick="quelle('crazyants.de/wp-content/uploads/2015/01/IMG_2317.jpg')">
                         <div class="card-body">
@@ -194,6 +200,35 @@
                             <p class="card-text">Imker verwenden die Säure um Milben von ihren Bienenstöcken vernzuhalten.</p>
                         </div>
                     </div>
+                </div>
+
+                <!--Slide 2-->
+                <div id="ameisen-slide-1" class="row mt-5 justify-content-center d-none">
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/ameisegift.jpg" alt="Ameisengift" onclick="quelle('crazyants.de/wp-content/uploads/2015/01/IMG_2317.jpg')">
+                        <div class="card-body">
+                            <h5 class="card-title">Ameisengiffsaddfadst</h5>
+                            <p class="card-text">Der Juckreitz wird durch die Ameisensäure ausgelöst.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/planeice.jpeg" alt="Flugzeugenteisung" onclick="quelle('www.aerointernational.de/industrie-technik-nachrichten/flugzeugenteisung-winter-am-flughafen-das-eis-muss-weg.html')">
+                        <div class="card-body">
+                            <h5 class="card-title">Flughäfen</h5>
+                            <p class="card-text">Enteisung der Rollbahnen.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mx-3" style="width: 18rem;">
+                        <img class="rounded-img" src="./img/bienenstock.jpeg" alt="Bienenstock" onclick="quelle('www.nordische-esskultur.de/betriebsbesichtigung-besuch-im-bienenstock/')">
+                        <div class="card-body">
+                            <h5 class="card-title">Milbenbekämfung</h5>
+                            <p class="card-text">Imker verwenden die Säure um Milben von ihren Bienenstöcken vernzuhalten.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <a onclick="ameisenquizslider('-')" class="btn btn-secondary mx-3 w-auto">&laquo;</a>
+                    <a onclick="ameisenquizslider('+')" class="btn btn-success mx-3 w-auto">&raquo;</a>
                 </div>
                 <div class="row justify-content-center">
                     <a href="#startessig" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
@@ -226,7 +261,6 @@
                             <a onclick="validateEssigQuiz(0, this)" class="btn btn-outline-info p-3">Milchsäure</a>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="row justify-content-center">
                     <a id="essig-start-weiter" class="btn d-none btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>

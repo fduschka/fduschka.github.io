@@ -47,3 +47,24 @@ function validateEssigQuiz(selection, button) {
 
     document.getElementById('essig-start-weiter').classList.remove("d-none");
 }
+
+
+var currentSlide = 0;
+function ameisenquizslider(direction) {
+    let slides = [document.getElementById("ameisen-slide-0"), document.getElementById("ameisen-slide-1"),];
+
+    if (direction == '+') {
+        if (currentSlide + 1 == slides.length) return;
+        console.log(slides.length);
+        slides[currentSlide].classList.add("d-none");
+        slides[currentSlide + 1].classList.remove("d-none");
+        currentSlide++;
+    } else if (direction == '-') {
+        if (currentSlide == 0) return;
+        slides[currentSlide].classList.add("d-none");
+        slides[currentSlide - 1].classList.remove("d-none"); 
+        currentSlide--;
+    }
+
+    
+}
