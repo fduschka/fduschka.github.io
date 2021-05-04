@@ -212,14 +212,14 @@
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
-                        <img class="rounded-img" src="./img/wildschwein.jpg" alt="Wildschwein" onclick="quelle('www.aerointernational.de/industrie-technik-nachrichten/flugzeugenteisung-winter-am-flughafen-das-eis-muss-weg.html')">
+                        <img class="rounded-img" src="./img/wildschwein.jpg" alt="Wildschwein" onclick="quelle('www.kindernetz.de/wissen/tierlexikon/1606398445392,steckbrief-wildschwein-102~_v-16x9@2dL_-6c42aff4e68b43c7868c3240d3ebfa29867457da.jpg')">
                         <div class="card-body">
                             <h5 class="card-title">Abhalten von Parasieten</h5>
                             <p class="card-text">Wildschweine reiben sich an Ameisenhügeln um durch die Säure Parasieten aus ihrem Fell fern zu halten.</p>
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
-                        <img class="rounded-img" src="./img/medikamentmethan.jpeg" alt="Medikamente" onclick="quelle('www.nordische-esskultur.de/betriebsbesichtigung-besuch-im-bienenstock/')">
+                        <img class="rounded-img" src="./img/medikamentmethan.jpeg" alt="Medikamente" onclick="quelle('www.restauro-online.com/WebRoot/Store6/Shops/63807438/559B/DB06/D9A6/C466/A3E1/C0A8/2AB8/650B/Z162_HNO3_65_tech_m.JPG')">
                         <div class="card-body">
                             <h5 class="card-title">Pharmaindustrie</h5>
                             <p class="card-text">Die Säure wird als Wirkstoff gegen Rheuma verwendet.</p>
@@ -263,10 +263,79 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a id="essig-start-weiter" class="btn d-none btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                    <a id="essig-start-weiter" href="#essig" class="btn d-none btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
                 </div>
             </div>
         </div>
+
+
+        <!--ESSIGSÄURE-->
+
+        <div id="essig" class="row vh-100 justify-content-center align-items-center">
+            <div class="col-auto text-light">
+                
+                <div class="row mx-auto justify-content-center">
+                    
+                    <div class="col-md-6 col-sm-8">
+                        <h2 class="mb-4">Die Essigsäure (Ethansäure)</h2>
+                        <div class="row">
+                            <p><strong>Beschreibung:</strong></p>
+                            <p>
+                                Dadurch, dass die Säure von Ameisen als Gift verwendet wird, <br>
+                                wurde sie schon 1670 zur Ameisensäure benannt.
+                            </p>
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <p><strong>Formel:</strong></p>
+                                    <img class="formelImg" src="./img/formeln/ethan.png" alt="Essigsäure"> 
+                                </div>
+                                <div class="col-6">
+                                    <p class="mb-3"><strong>pH-Wert:</strong> 2.88</p>
+                                    <p><strong>Gefahren:</strong></p> 
+                                    <img class="gefahr-symbol" src="./img/symbole/giftig.png" alt="Giftig">
+                                    <img class="gefahr-symbol" src="./img/symbole/aetzend.png" alt="Ätzend">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8 mt-5">
+                        <img class="vergleich-img-essig" src="./img/essig.jpg" alt="Essig" onclick="quelle('utopia.de/app/uploads/2019/08/ameisensaeure-cc0-pixabay-ekamelev-190816.jpg')">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#geruch" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Mehr Erfahren</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--GERUCH MINIGAME-->
+
+        <div id="geruch" class="row vh-100 justify-content-md-center align-items-center">
+            <div class="col-lg-auto text-light">
+                <h2 class="text-primary">Ordne zu!</h2>
+                <h3>Ordne den drei Gerüchen passende Säuren zu!</h3>
+                <p class="mb-4 text-secondary"><strong>Drag and Drop</strong></p>
+                <div class="row draganddrop justify-content-center text-center">
+                    <div class="col-3 dropstelle-text"><p>Geruchlos:</p></div>
+                    <div class="col-3 dropstelle-text"><p>Unangenehm:</p></div>
+                    <div class="col-3 dropstelle-text"><p>Stechend:</p></div>
+                </div>
+                <div class="row draganddrop justify-content-center">
+                    <div class="col-3 dropstelle" ondrop="drop(event, 1)" ondragover="allowDrop(event)"></div>
+                    <div class="col-3 dropstelle" ondrop="drop(event, 2)" ondragover="allowDrop(event)"></div>
+                    <div class="col-3 dropstelle" ondrop="drop(event, 3)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-3"><div class="drag-item" id="drag-$1$-1" draggable="true" ondragstart="drag(event)"><p>Essigsäure</p></div></div>
+                    <div class="col-3"><div class="drag-item" id="drag-$2$-2" draggable="true" ondragstart="drag(event)"><p>Ameisensäure</p></div></div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#ameisenfunktionen" id="ameisen-quiz-weiter" class="mx-4 btn btn-outline-warning w-auto mt-5 py-3 px-5">Weiter</a>
+                </div>
+            </div>
+        </div>
+
 </body>
 
 <script src="./script.js"></script>

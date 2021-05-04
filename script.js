@@ -65,6 +65,30 @@ function ameisenquizslider(direction) {
         slides[currentSlide - 1].classList.remove("d-none"); 
         currentSlide--;
     }
+}
 
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev, location) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var item = document.getElementById(data);
+    var search = "-$" + location + "$-";
+
+    item.classList.remove("bg-success");
+    item.classList.remove("bg-danger");
     
+    ev.target.appendChild(document.getElementById(data));
+    console.log(item);
+    if (data.includes(search)) {
+        item.classList.add("bg-success");
+    } else {
+        item.classList.add("bg-danger");
+    }
 }

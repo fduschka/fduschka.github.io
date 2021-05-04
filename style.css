@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
     background-color: rgb(31, 30, 30); 
     overflow-x: hidden; 
     color: white;
-    text-align: center
+    
 }
 
 .overlay p {
@@ -210,4 +210,43 @@ body::-webkit-scrollbar {
     .overlay  {
         display: block;
     }
+}
+
+
+.vergleich-img-essig {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: -5px 10px #912a2a;
+
+}
+
+.vergleich-img-essig:hover {
+    box-shadow: -5px 10px #91822a;
+}
+
+.dropstelle {
+    border: 1px solid white;
+    min-height: 300px;
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+
+.dropstelle-text {
+    font-weight: bold;
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.drag-item {
+    background-color: rgb(48, 48, 48);
+    border-radius: 15px;
+    height: 40px;
+    padding: 7.5px;
+    margin: 10px 0px;
+    text-align: center;
 }
