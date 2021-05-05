@@ -2,6 +2,15 @@ function quelle(link) {
     alert("Quelle: " + link);
 }
 
+function startVid() {
+    var vid = document.getElementById('welcome-vid');
+    vid.play();
+}
+
+function stopVid() {
+    var vid = document.getElementById('welcome-vid');
+    vid.pause();
+}
 
 
 function ameisenquiz(button) {
