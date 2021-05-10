@@ -107,7 +107,7 @@ function startPlastic() {
     setTimeout(
         function() {
             fade(document.getElementById("plastik-start-weiter"));
-    }, 1000);
+    }, 500);
 }
 
 function fade(element) {
@@ -116,10 +116,33 @@ function fade(element) {
         if (op >= 1) clearInterval(timer);
         element.style.opacity = op + 0.1;
         op += 0.1;
-        console.log(op);
     }, 50);
 }
 
 function stopPlastic() {
     document.getElementById("plastic-vid").pause(); 
+    polyVidInfo();
+}
+
+function polyVidInfo() {
+    document.getElementById('vidStartBtn').classList.add('d-none');
+    const data = Array.from(document.querySelectorAll('#info-data>ul>li'));
+    var checks = [];
+    var timeStamps = [3.0, 6.0, 16.0, 20.0, 20.0, 24.0, 37.0];
+    var video = document.getElementById("poly-vid");
+    var next = 0;
+    video.play();
+
+    video.ontimeupdate = function(){
+        if (timeStamps[next] <= video.currentTime && checks.length <= next) {
+            data[next].classList.remove('d-none');
+            checks.push(true);
+            console.log("now");
+            next++;
+        }
+    };
+}
+
+function stopPolyVid() {
+    document.getElementById('poly-vid').pause();
 }

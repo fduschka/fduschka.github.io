@@ -310,3 +310,21 @@ body::-webkit-scrollbar {
 #plastik-start-weiter {
     opacity: 0;
 }
+
+#poly-vid {
+    width: 70vh;
+    height: 40vh;
+}
+
+.spickzettel {
+    background-color: #fbff00;
+    color: black;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: -7px 7px 0 3px rgb(134, 134, 134);
+}
+
+#poly-vid {
+    border-radius: 5px;
+}

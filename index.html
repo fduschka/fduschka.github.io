@@ -282,11 +282,16 @@
                     <div class="col-md-6 col-sm-8">
                         <h2 class="mb-4">Die Essigsäure (Ethansäure)</h2>
                         <div class="row">
-                            <p><strong>Beschreibung:</strong></p>
-                            <p>
-                                Dadurch, dass die Säure von Ameisen als Gift verwendet wird, <br>
-                                wurde sie schon 1670 zur Ameisensäure benannt.
-                            </p>
+                            <p><strong>Essigsäure ist:</strong></p>
+                            <div class="row">
+                                <ul class="col-6 mx-5">
+                                    <li>Farblos</li>
+                                    <li>Ätzend</li>
+                                    <li>Brennbar</li>
+                                    <li>Stechender Geruch</li>
+                                </ul>
+                            </div>
+                                
                             <div class="row mt-3">
                                 <div class="col-4">
                                     <p><strong>Formel:</strong></p>
@@ -321,7 +326,53 @@
                 </video>
                 <div class="row justify-content-center">
                     <h2 class="h1">Plastikproduktion</h2>
-                    <a id="plastik-start-weiter" href="#game-verwendung" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="stopPlastic()">Weiter</a>
+                    <a id="plastik-start-weiter" href="#polykondesation" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="stopPlastic()">Weiter</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--POLYKONDENSATION-->
+
+        <div id="polykondesation" class="row vh-100 justify-content-center align-items-center">
+            <div class="col-auto text-light ">
+                
+                <div class="row mx-auto justify-content-center">
+                    
+                    <div class="col-md-12 col-sm-8 justify-content-center">
+                        <h2 class="mb-6">Die Polykondensation</h2>
+                        <div class="row mt-5">
+                            <table>
+                                <tr class="width-100">
+                                    <div class="spickzettel">
+                                        <p><strong>Spickzettel:</strong></p>
+                                        <button id="vidStartBtn" onclick="polyVidInfo()" class="text-primary">Video Starten</button>
+                                        <div id="info-data">
+                                            <ul>
+                                                <li class="d-none">Polykondensation</li>
+                                                <li class="d-none">Polykondensate</li>
+                                                <li class="d-none">Esterbildung <br> (Veresterung)</li>
+                                                <li class="d-none">Polyester</li>
+                                                <li class="d-none">Polycarbonate</li>
+                                                <li class="d-none">Alkohol und <br> eine Carbonsäure</li>
+                                                <li class="d-none">Säurekatalysiert</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="w-50">
+                                        <video id="poly-vid">
+                                            <source src="./img/poly.mp4" type="video/mp4">
+                                        </video>    
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#game-verwendung" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="stopPolyVid()">Mehr Erfahren</a>
                 </div>
             </div>
         </div>
