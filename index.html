@@ -34,7 +34,7 @@
                 <div class="welcome-video">
                     <video id="welcome-vid" controls>
                         <source src="./img/einfuehrung.mp4" type="video/mp4">
-                      </video>
+                    </video>
                 </div>
                 <a href="#ameisen" class="btn btn-outline-warning mt-4 mx-3 px-5 py-3" onclick="stopVid()">Weiter <strong></br> [Für Profis] </strong></a>
                 <a href="#basics" id="start-Button" class="btn btn-warning mx-3 mt-4 px-5 py-3" onclick="stopVid()">Weiter <strong></br> [Für Anfänger]</strong></a>
@@ -306,15 +306,30 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a href="#geruch" class="btn btn-outline-warning w-auto mt-5 py-3 px-5">Mehr Erfahren</a>
+                    <a href="#plastik" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="startPlastic()">Mehr Erfahren</a>
                 </div>
             </div>
         </div>
 
 
-        <!--GERUCH MINIGAME-->
+        <!--EINFÜHRUNG PLASTIK-->
 
-        <div id="geruch" class="row vh-100 justify-content-md-center align-items-center">
+        <div id="plastik" class="row vh-100 justify-content-md-center align-items-center vid-container">
+            <div class="col-auto text-light text-center">
+                <video muted loop class="bg-video" id="plastic-vid">
+                    <source src="./img/plastik.mov" type="video/mp4">
+                </video>
+                <div class="row justify-content-center">
+                    <h2 class="h1">Plastikproduktion</h2>
+                    <a id="plastik-start-weiter" href="#game-verwendung" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="stopPlastic()">Weiter</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Verwendung MINIGAME-->
+
+        <div id="game-verwendung" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-light">
                 <h2 class="text-primary">Ordne zu!</h2>
                 <h3>Für was wir welche säure verwendet!</h3>

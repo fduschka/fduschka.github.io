@@ -101,3 +101,25 @@ function drop(ev, location) {
         item.classList.add("bg-danger");
     }
 }
+
+function startPlastic() {
+    document.getElementById("plastic-vid").play();
+    setTimeout(
+        function() {
+            fade(document.getElementById("plastik-start-weiter"));
+    }, 1000);
+}
+
+function fade(element) {
+    op = 0;
+    var timer = setInterval(function () {
+        if (op >= 1) clearInterval(timer);
+        element.style.opacity = op + 0.1;
+        op += 0.1;
+        console.log(op);
+    }, 50);
+}
+
+function stopPlastic() {
+    document.getElementById("plastic-vid").pause(); 
+}
