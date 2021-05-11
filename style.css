@@ -71,6 +71,13 @@ body::-webkit-scrollbar {
 
 }
 
+.vergleich-img-pet {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: -5px 10px #2a2df3;
+
+}
+
 .formelImg {
     max-width: 150px;
 }
