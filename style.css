@@ -310,7 +310,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: .2;
+    opacity: .5;
     z-index: -1;
 }
 
@@ -339,4 +339,8 @@ body::-webkit-scrollbar {
 .polyimg {
     height: 70vh;
     width: 70vw;
+}
+
+.lueckentext {
+    line-height: 2.5;
 }

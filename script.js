@@ -146,3 +146,28 @@ function polyVidInfo() {
 function stopPolyVid() {
     document.getElementById('poly-vid').pause();
 }
+
+
+function allowDropluecke(ev) {
+    ev.preventDefault();
+}
+
+function dragluecke(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dropluecke(ev, word, item) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+
+    item.classList.remove("text-success");
+    item.classList.remove("text-danger");
+    
+    ev.target.innerHTML = data.replace('word-', '');
+
+    if (data.replace('word-', '') == word) {
+        item.classList.add("text-success");
+    } else {
+        item.classList.add("text-danger");
+    }
+}
