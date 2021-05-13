@@ -344,3 +344,7 @@ body::-webkit-scrollbar {
 .lueckentext {
     line-height: 2.5;
 }
+
+#color {
+    color:rgb(21, 255, 0)
+}
