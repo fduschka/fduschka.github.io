@@ -148,8 +148,18 @@ function stopPolyVid() {
 }
 
 
-function allowDropluecke(ev) {
+function allowDropluecke(ev, item) {
     ev.preventDefault();
+   
+    item.classList.add('bg-light');
+    item.classList.add('p-3');
+}
+
+function leaveDrop(ev, item) {
+    ev.preventDefault();
+   
+    item.classList.remove('bg-light');
+    item.classList.remove('p-3');
 }
 
 function dragluecke(ev) {
@@ -163,6 +173,8 @@ function dropluecke(ev, word, item) {
 
     item.classList.remove("text-success");
     item.classList.remove("text-danger");
+    item.classList.remove('bg-light');
+    item.classList.remove('p-3');
     
     ev.target.innerHTML = data.replace('word-', '');
 
