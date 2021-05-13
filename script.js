@@ -210,3 +210,5 @@ function fadeColor() {
     },10);
 }
 
+
+document.getElementById("copyDate").innerHTML = new Date().getFullYear();
