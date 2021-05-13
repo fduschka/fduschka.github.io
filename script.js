@@ -17,21 +17,40 @@ function ameisenquiz(button) {
     let corrects = [1,0,1,1];
     let boxes = [document.getElementById("ameisen-quiz-1"), document.getElementById("ameisen-quiz-2"), document.getElementById("ameisen-quiz-3"), document.getElementById("ameisen-quiz-4")]
     
+    var answerCorrect = [];
+    var answerFalse = [];
+
     boxes.forEach(box => {
         box.parentElement.classList.remove("quiz-correct");
         box.parentElement.classList.remove("quiz-false");
     });
 
+    document.getElementById("all-correct").classList.add("d-none");
+    document.getElementById("fast-correct").classList.add("d-none");
+    document.getElementById("naja-correct").classList.add("d-none");
+
     for (let i = 0; i < boxes.length; i++) {
         if (boxes[i].checked && corrects[i] == 1) {
             boxes[i].parentElement.classList.add("quiz-correct");
+            answerCorrect.push(1);
         } else if (!boxes[i].checked && corrects[i] == 1) {
             boxes[i].parentElement.classList.add("quiz-false");
+            answerFalse.push(1);
         } else if (!boxes[i].checked && corrects[i] == 0) {
             boxes[i].parentElement.classList.add("quiz-correct");
+            answerCorrect.push(1);
         } else {
             boxes[i].parentElement.classList.add("quiz-false"); 
+            answerFalse.push(1);
         }
+    }
+
+    if (answerCorrect.length == 0) {
+        document.getElementById("naja-correct").classList.remove("d-none");
+    } else if (answerFalse.length == 0) {
+        document.getElementById("all-correct").classList.remove("d-none");
+    } else {
+        document.getElementById("fast-correct").classList.remove("d-none");
     }
 
     button.innerHTML = "Erneut Überpüfen";
@@ -43,6 +62,15 @@ function addCtoMethan(button) {
     document.getElementById('image-methan-acid').classList.add('d-none');
     button.classList.add('d-none');
     document.getElementById('essig-start-quiz').classList.remove('d-none');
+    document.getElementById('redocircle').classList.remove('d-none');
+}
+
+function redoCtoMethan() {
+    document.getElementById('image-ethan-acid').classList.add('d-none');
+    document.getElementById('image-methan-acid').classList.remove('d-none');  
+    document.getElementById('essig-start-quiz').classList.add('d-none');
+    document.getElementById('redocircle').classList.add('d-none');
+    document.getElementById('addCbtn').classList.remove('d-none');
 }
 
 function validateEssigQuiz(selection, button) {
@@ -187,6 +215,8 @@ function dropluecke(ev, word, item) {
 
     if (lueckeChecks.length >= 7) {
         document.getElementById("end-btn").classList.remove('d-none');
+        document.getElementById("lueckeSuccess").classList.remove('d-none');
+        document.getElementById("lueckeAllItems").classList.add('d-none'); 
     } 
 }
 

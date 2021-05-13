@@ -24,7 +24,7 @@
             <div class="col-lg-auto text-center text-light">
                 <img src="./img/logo_gruenwald.png" height="30" class="mb-3" alt="">
                 <h1 class="title">Carbonsäuren</h1>
-                <h2 class="subtitle">In der Technik und im Haushalt</h2>
+                <h2 class="subtitle">in Haushalt und Technik</h2>
                 <a href="#start" id="startBtn" class="btn btn-outline-warning mt-4 py-3 px-5" onclick="startVid()">Start</a>
             </div>
         </div>
@@ -49,10 +49,10 @@
 
         <div id="basics" class="row vh-100 justify-content-md-center align-items-center">
             <div class="col-lg-auto text-light">
-                <h2>Was ist eine Carbonsäure – Die Basics:</h2>
+                <h2>Was ist eine Carbonsäure? – Die Basics:</h2>
                 <ul class="mt-4">
                     <li>Eine Carbonsäure ist eine organische Verbindung.</li>
-                    <li>Reagiert sauer (d.h. Protonen (H<sup>+</sup>) können leicht abgegeben werden)</li>
+                    <li>Sie reagiert sauer (d.h. Protonen (H<sup>+</sup>) können leicht abgegeben werden).</li>
                 </ul>
                 
                 <p><strong>Funktionelle Gruppe:</strong> Carboxy-Gruppe</p>
@@ -62,7 +62,7 @@
                         <td>
                             <span class="legend-red"></span><span class="text-warning"><strong>Carb</strong></span>onylgruppe
                             <br>
-                            <span class="legend-green"></span><span class="text-warning"><strong>Hydroxy</strong></span>gruppe
+                            <span class="legend-green"></span>Hydr<span class="text-warning"><strong>oxy</strong></span>gruppe
                         </td>
                     </tr>
                 </table>
@@ -149,23 +149,42 @@
                 <h3>Für was wird Ameisensäure eigentlich verwendet?</h3>
                 <p class="mb-4 text-primary">Du kannst <strong>mehrere</strong> Antworten auswählen!</p>
                 <div class="ameisenquiz">
-                    <div class="row mx-5">
-                        <label class="quiz-check">An Flughäfen
-                            <input id="ameisen-quiz-1" type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="quiz-check">Stoffherstellung
-                            <input id="ameisen-quiz-2" type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="quiz-check">Milbenbekämpfung
-                            <input id="ameisen-quiz-3" type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="quiz-check">Imprägnieren von Leder
-                            <input id="ameisen-quiz-4" type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
+                    <div class="row">
+                        <div class="col-8">
+                            <label class="quiz-check">Enteisung
+                                <input id="ameisen-quiz-1" type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="quiz-check">Textilproduktion
+                                <input id="ameisen-quiz-2" type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="quiz-check">Milbenbekämpfung
+                                <input id="ameisen-quiz-3" type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="quiz-check">Imprägnieren von Leder
+                                <input id="ameisen-quiz-4" type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div id="all-correct" class="d-none">
+                                <p class="h3">Super!</p>
+                                <p class="h4">Alles richtig!</p>
+                                <img class="quiz-img" src="./img/emojis/good.png" alt="">
+                            </div>
+                            <div id="fast-correct" class="d-none">
+                                <p class="h3">Nicht ganz!</p>
+                                <p class="h4">Versuche es nochmal!</p>
+                                <img class="quiz-img" src="./img/emojis/ok.png" alt="">
+                            </div>
+                            <div id="naja-correct" class="d-none">
+                                <p class="h3">Das stimmt nicht!</p>
+                                <p class="h4">Versuche es nochmal!</p>
+                                <img class="quiz-img" src="./img/emojis/bad.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -195,8 +214,8 @@
                     <div class="card bg-dark mx-3" style="width: 18rem;">
                         <img class="rounded-img slide-img" src="./img/planeice.jpeg" alt="Flugzeugenteisung" onclick="quelle('www.aerointernational.de/industrie-technik-nachrichten/flugzeugenteisung-winter-am-flughafen-das-eis-muss-weg.html')">
                         <div class="card-body">
-                            <h5 class="card-title">An Flughäfen</h5>
-                            <p class="card-text">Enteisung der Rollbahnen.</p>
+                            <h5 class="card-title">Enteisung</h5>
+                            <p class="card-text">An Flughäfen werden Rollbahnen mit Ameisensäure enteist.</p>
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
@@ -220,8 +239,8 @@
                     <div class="card bg-dark mx-3" style="width: 18rem;">
                         <img class="rounded-img slide-img" src="./img/wildschwein.jpg" alt="Wildschwein" onclick="quelle('www.kindernetz.de/wissen/tierlexikon/1606398445392,steckbrief-wildschwein-102~_v-16x9@2dL_-6c42aff4e68b43c7868c3240d3ebfa29867457da.jpg')">
                         <div class="card-body">
-                            <h5 class="card-title">Abhalten von Parasieten</h5>
-                            <p class="card-text">Wildschweine reiben sich an Ameisenhügeln, um durch die Säure Parasieten von ihrem Fell fernzuhalten.</p>
+                            <h5 class="card-title">Abhalten von Parasiten</h5>
+                            <p class="card-text">Wildschweine reiben sich an Ameisenhügeln, um durch die Säure Parasiten von ihrem Fell fernzuhalten.</p>
                         </div>
                     </div>
                     <div class="card bg-dark mx-3" style="width: 18rem;">
@@ -250,21 +269,23 @@
                 <h2>Lass uns ein <span class="sing-badge">C</span> hinzufügen!</h2>
                 <div class="row">
                     <div class="col-8 text-center">
-                        <img src="./img/formeln/methan.png" id="image-methan-acid" alt="Methansäure">
+                        <img src="./img/formeln/methan2.png" id="image-methan-acid" alt="Methansäure">
                         <img src="./img/formeln/ethan.png" id="image-ethan-acid" class="d-none" alt="Ethansäure">
+                        
                     </div>
                     <div class="col-3 mt-5">
-                        <a class="btn btn-outline-danger w-auto mt-5 py-3 px-5" onclick="addCtoMethan(this)">Hinzufügen</a>
+                        <a class="btn btn-outline-danger w-auto mt-5 py-3 px-5" id="addCbtn" onclick="addCtoMethan(this)">Hinzufügen</a>
+                        <a id="redocircle" class="btn btn-secondary rounded-circle">&#8635;</a>
                     </div>
                 </div>
                 <div id="essig-start-quiz" class="d-none">
-                    <h5 class="mt-5">Um welche Carbonsäure handelt es sich?</h5>
+                    <h5 class="mt-5">Um welche Carbonsäure handelt es sich jetzt?</h5>
                     <div class="row text-center mt-5">
                         <div class="col-6">
                             <a onclick="validateEssigQuiz(1, this)" class="btn btn-outline-secondary p-3">Essigsäure</a>
                         </div>
                         <div class="col-6">
-                            <a onclick="validateEssigQuiz(0, this)" class="btn btn-outline-info p-3">Milchsäure</a>
+                            <a onclick="validateEssigQuiz(0, this)" class="btn btn-outline-secondary p-3">Milchsäure</a>
                         </div>
                     </div>
                 </div>
@@ -524,7 +545,7 @@
                         In Fachsprache sagt man auch, dass die Reaktion nur <span ondrop="dropluecke(event, 'säurekatalysiert', this)" ondragover="allowDropluecke(event, this)" ondragleave="leaveDrop(event, this)">_____________________</span>  ablaufen kann.
                     </p>
                 </div>
-                <div class="row mt-4">
+                <div id="lueckeAllItems" class="row mt-4">
                     <div class="col-3"><div class="drag-item" id="word-Edukte" draggable="true" ondragstart="dragluecke(event)"><p>Edukte</p></div></div>  
                     <div class="col-3"><div class="drag-item" id="word-Protonen (H<sup>+</sup>)" draggable="true" ondragstart="dragluecke(event)"><p>Protonen (H<sup>+</sup>)</p></div></div> 
                     <div class="col-3"><div class="drag-item" id="word-säurekatalysiert" draggable="true" ondragstart="dragluecke(event)"><p>säurekatalysiert</p></div></div>  
@@ -532,6 +553,15 @@
                     <div class="col-3"><div class="drag-item" id="word-Polycarbonate" draggable="true" ondragstart="dragluecke(event)"><p>Polycarbonate</p></div></div>     
                     <div class="col-3"><div class="drag-item" id="word-Polykondensation" draggable="true" ondragstart="dragluecke(event)"><p>Polykondensation</p></div></div>
                     <div class="col-3"><div class="drag-item" id="word-Alkohol" draggable="true" ondragstart="dragluecke(event)"><p>Alkohol</p></div></div> 
+                </div>
+                <div id="lueckeSuccess" class="row mt-5 d-none">
+                    <div class="col-3">
+                        <img height="200" src="./img/emojis/geist.png" alt="">
+                    </div>
+                    <div class="mx-5 col-6">
+                        <p class="h2 mt-5 lueckeTitle">Herzlichen Glückwunsch!</p>
+                        <p class="h4 mt-3 lueckeText">Du hast es geschaft! Du bist jetzt ein wahrer Carbonsäuren Profi!!!</p>
+                    </div>
                 </div>
                 <div id="end-btn" class="row justify-content-center d-none">
                     <a href="#ende" class="btn btn-outline-warning w-auto mt-5 py-3 px-5" onclick="fadeColor()">Beenden</a>

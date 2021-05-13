@@ -178,6 +178,47 @@ body::-webkit-scrollbar {
     color: red;
 }
 
+.quiz-img {
+    height: 150px;
+}
+
+#all-correct {
+    filter: drop-shadow(10px 10px 15px #326403);   
+}
+
+#all-correct p {
+    color: rgb(0, 255, 55);
+    filter: drop-shadow(10px 10px 15px #05ff1a); 
+}
+
+#fast-correct {
+    filter: drop-shadow(10px 10px 15px #be0380);   
+}
+
+#all-correct img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
+}
+
+#fast-correct p {
+    color: rgb(255, 0, 212);
+    filter: drop-shadow(10px 10px 15px #ea05ff); 
+}
+
+#naja-correct {
+    filter: drop-shadow(10px 10px 15px #be0303);   
+}
+
+#naja-correct img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
+}
+
+#naja-correct p {
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(10px 10px 15px #ff053b); 
+}
+
 .rounded-img {
     border-radius: 30px;
     filter: drop-shadow(0px 0px 15px #9898b6);;
@@ -347,4 +388,13 @@ body::-webkit-scrollbar {
 
 #color {
     color:rgb(21, 255, 0)
+}
+
+.lueckeTitle {
+    color: rgb(0, 255, 55);
+    filter: drop-shadow(10px 10px 15px #05ff1a);  
+}
+
+.lueckeText {
+    color: rgb(192, 231, 207);
 }
